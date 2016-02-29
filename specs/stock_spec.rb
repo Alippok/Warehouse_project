@@ -16,6 +16,9 @@ def test_if_stock_returns_descrition
   assert_equal('4 large plates', @stock1.item_description)
 end
 
+def test_if_stock_returns_id
+  assert_equal('TBSP4', @stock4.id)
+end
 
 
 
