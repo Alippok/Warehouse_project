@@ -1,10 +1,10 @@
 class Stock
 
-attr_reader(:price, :item_description, :id, :tag)
+attr_reader(:price, :description, :id, :tag)
 
 def initialize(params)
 @price = params[:price]
-@item_description = params[:item_description]
+@description = params[:description]
 @id = params[:id]
 @tag = params[:tag]
 
