@@ -7,9 +7,11 @@ def initialize(hold)
 
 end
 
-
-
-
+def hold_items
+  items = []
+  @hold.each{|item| items << item.description}
+  return items
+end
 
 
 end
