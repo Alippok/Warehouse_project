@@ -1,8 +1,9 @@
 class Row
 
-attr_reader(:name, :slots)
-def initialize(name)
-@name = name
+attr_reader(:slots, :id)
+
+def initialize(id)
+@id = id
 @slots = {
   1 => [],
   2 => [],
@@ -11,11 +12,11 @@ def initialize(name)
   5 => []
 }
 
-
-
 end
 
-
+def id
+  return @id.upcase
+end
 
 
 
